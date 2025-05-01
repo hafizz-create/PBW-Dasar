@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Menghitung Harga Bayar dengan Diskon</h3>
+    <script>
+        var nama = "Kemeja";
+        var harga = 100000;
+        var jumlah = 3;
+
+        var diskon = 0;
+        if (jumlah >= 3) {
+        diskon = 0.1 * harga; // 10% dari harga per item
+        }
+
+        var totalBayar = (harga * jumlah) - (diskon * jumlah);
+
+        document.writeln("Nama Barang: " + nama + "<br>");
+        document.writeln("Harga Satuan: " + harga + "<br>");
+        document.writeln("Jumlah: " + jumlah + "<br>");
+        document.writeln("Diskon per barang: " + diskon + "<br>");
+        document.writeln("Total Bayar: " + totalBayar + "<br>");
+
+</script>
+</body>
+</html>

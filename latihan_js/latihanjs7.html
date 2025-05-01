@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Penerimaan Pegawai</title>
+</head>
+<body>
+  <script>
+    var gender = "laki-laki";   
+    var tinggi = 175;           
+    var berat = 65;            
+    var ipk = 3.5;           
+    var pendidikan = "S1";     
+
+    var ideal = tinggi - 110;
+    let lolos = false;
+
+    if (gender === "laki-laki" && tinggi >= 170 && tinggi <= 179 && berat === ideal 
+    && ipk >= 3 && ipk <= 4 && (pendidikan === "D3" || pendidikan === "S1")) {
+      lolos = true;
+    }
+    if (gender === "perempuan" && tinggi >= 160 && tinggi <= 170 && berat === ideal 
+    && ipk >= 3 && ipk <= 4 && (pendidikan === "D3" || pendidikan === "S1")) {
+      lolos = true;
+    }
+
+    document.writeln(lolos ? "<h3>Selamat, Anda diterima!</h3>" : "<h3>Maaf, Anda tidak diterima.</h3>");
+  </script>
+</body>
+</html>
